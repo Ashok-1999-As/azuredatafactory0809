@@ -1,0 +1,24 @@
+{
+	"name": "adls_excel_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_CONNECTION",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "adls"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BOOK1.xlsx",
+				"folderPath": "rawdatasets",
+				"fileSystem": "mycontainer"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
