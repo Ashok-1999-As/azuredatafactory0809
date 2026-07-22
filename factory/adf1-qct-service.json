@@ -1,0 +1,15 @@
+{
+	"name": "adf1-qct-service",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "15a49002-fb0e-4117-a8e7-0acbf316b0cf",
+		"tenantId": "32cd76c1-2123-4eb6-8cce-95ebb3d45b70"
+	}
+}
