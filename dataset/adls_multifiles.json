@@ -19,6 +19,7 @@
 					"value": "@dataset().sourcefilename",
 					"type": "Expression"
 				},
+				"folderPath": "rawdatasets",
 				"fileSystem": "mycontainer"
 			},
 			"columnDelimiter": ",",
