@@ -1,0 +1,18 @@
+{
+	"name": "ds_adls_raw_folder_lookup",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_CONNECTION",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "rawdatasets",
+				"fileSystem": "mycontainer"
+			}
+		}
+	}
+}
