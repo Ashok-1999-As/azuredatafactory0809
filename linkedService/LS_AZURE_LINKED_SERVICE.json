@@ -1,0 +1,23 @@
+{
+	"name": "LS_AZURE_LINKED_SERVICE",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "quant-learning.database.windows.net",
+			"database": "quant-db",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "a2hok",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AZUREVAULT",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "quantsqluser"
+			}
+		}
+	}
+}
