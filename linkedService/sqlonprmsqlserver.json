@@ -1,0 +1,21 @@
+{
+	"name": "sqlonprmsqlserver",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "A2HOK",
+			"database": "EcommerceDB",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "Rachu",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2YmNmOGRhZC00MDVjLTRhMzAtOWU5Yy1iOGRhNmNkMWFmZWEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "ir-onprm-runtime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
