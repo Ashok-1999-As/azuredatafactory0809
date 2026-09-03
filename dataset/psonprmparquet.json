@@ -1,0 +1,32 @@
+{
+	"name": "psonprmparquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_CONNECTION",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"targettable": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "onprmsql"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().targettable",
+					"type": "Expression"
+				},
+				"folderPath": "onprm_sql_tables",
+				"fileSystem": "mycontainer"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
