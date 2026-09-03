@@ -1,0 +1,33 @@
+{
+	"name": "on_prm_db",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqlonprmsqlserver",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"srcschema": {
+				"type": "string"
+			},
+			"srcvalue": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "onprmsql"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().srcschema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().srcvalue",
+				"type": "Expression"
+			}
+		}
+	}
+}
